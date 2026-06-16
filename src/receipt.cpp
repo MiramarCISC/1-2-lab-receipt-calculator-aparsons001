@@ -1,4 +1,5 @@
 #include "receipt.hpp"
+// change to test push
 
 // TODO: Return the sum of all three item prices.
 double calculateSubtotal(double item1, double item2, double item3) {
