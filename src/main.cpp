@@ -1,7 +1,8 @@
 #include <iomanip>
 #include <iostream>
 #include "receipt.hpp"
-// change to test push
+#include "receipt.cpp"
+
 using namespace std;
 
 int main() {
@@ -25,7 +26,7 @@ int main() {
     cin >> tipPercent;
 
     double subtotal = calculateSubtotal(item1, item2, item3);
-    double tax = calculateTax(subtotal);
+    double tax = calculateTax(subtotal, 7.75); // inputted tax to clarify code
     double tip = calculateTip(subtotal, tipPercent);
     double total = calculateTotal(subtotal, tax, tip);
 
@@ -36,5 +37,5 @@ int main() {
     cout << "Tip: $" << tip << endl;
     cout << "Total: $" << total << endl;
 
-    return 0;
+    return total;
 }
