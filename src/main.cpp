@@ -1,7 +1,7 @@
 #include <iomanip>
 #include <iostream>
 #include "receipt.hpp"
-#include "receipt.cpp"
+//#include "receipt.cpp"
 
 using namespace std;
 
@@ -9,6 +9,7 @@ int main() {
     double item1 = 0.0;
     double item2 = 0.0;
     double item3 = 0.0;
+   // double TAX_RATE = 0.0;   
     double tipPercent = 0.0;
 
     cout << "Receipt Calculator" << endl << endl;
@@ -26,7 +27,7 @@ int main() {
     cin >> tipPercent;
 
     double subtotal = calculateSubtotal(item1, item2, item3);
-    double tax = calculateTax(subtotal, 7.75); // inputted tax to clarify code
+    double tax = calculateTax(subtotal, 7.75);
     double tip = calculateTip(subtotal, tipPercent);
     double total = calculateTotal(subtotal, tax, tip);
 

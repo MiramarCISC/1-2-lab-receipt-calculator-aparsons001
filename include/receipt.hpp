@@ -8,7 +8,7 @@ const double TAX_RATE = 0.0775;
 double calculateSubtotal(double item1, double item2, double item3);
 
 // Calculates sales tax using the required TAX_RATE.
-double calculateTax(double subtotal);
+double calculateTax(double subtotal, double TAX_RATE = 7.75); // defined tax rate
 
 // Calculates a tip based on the subtotal and a tip percentage.
 // Example: tipPercent = 15 means 15%.
